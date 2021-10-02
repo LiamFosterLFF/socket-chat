@@ -1,0 +1,101 @@
+body {
+  background-color: #a7ccedff;
+}
+
+#login-outer-wrapper {
+  text-align: center;
+  background-color: #63adf2ff;
+  color: #304d6dff;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  width: 33%;
+}
+
+#login-upper-bar {
+  background-color: #304d6dff;
+  color: #82a0bcff;
+  margin: 0;
+}
+
+#login-submit-button {
+  background-color: #63adf2ff;
+}
+
+#chat-outer-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #63adf2ff;
+  color: #304d6dff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 70%;
+}
+
+#chat-top-bar {
+  background-color: #304d6dff;
+  color: #82a0bcff;
+  margin: 0;
+  height: 20%;
+}
+
+#chat-middle-bar {
+  display: flex;
+  height: 70%;
+}
+
+#chat-middle-left-side-bar {
+  width: 25%;
+  overflow-y: scroll;
+}
+
+#chat-middle-right-side-bar {
+  width: 75%;
+}
+
+#chat-message-scroll {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#chat-bottom-bar {
+  background-color: #304d6dff;
+  height: 10%;
+}
+
+.message-outer-box {
+  background-color: #a7ccedff;
+  margin: 10px auto;
+  border-radius: 2px;
+  width: 90%;
+}
+
+.message-metadata {
+  font-size: 12px;
+  display: flex;
+}
+
+.metadata-text {
+  margin: 2px;
+  color: #545e75ff;
+}
+
+.message-content {
+  color: black;
+  text-align: left;
+}
+
+#chat-submit-button {
+  background-color: #63adf2ff;
+}
+
+/*# sourceMappingURL=app.css.map */
