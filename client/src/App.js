@@ -3,7 +3,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  Redirect
 } from "react-router-dom";
 import './static/stylesheets/app.css'
 
@@ -12,26 +13,18 @@ import Chat from  "./components/Chat";
 import Login from "./components/Login";
 
 const App = () => {
-
+  
   return (
     <MessageContextProvider>
       <div id="app">
         <Router>
           <div>
-            <nav>
-              <ul>
-                <li>
-                  <Link to="/login">Login</Link>
-                </li>
-                <li>
-                  <Link to="/chat">Chat</Link>
-                </li>
-              </ul>
-            </nav>
-
             <Switch>
-              <Route path="/chat">
-                <Chat roomName="Javascript"/>
+            <Route exact path="/">
+              <Redirect to="/login" />
+            </Route>
+              <Route path="/chat/:roomName/:username">
+                <Chat/>
               </Route>
               <Route path="/login">
                 <Login />

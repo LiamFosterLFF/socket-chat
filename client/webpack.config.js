@@ -7,6 +7,12 @@ module.exports = {
     filename: "bundle.[hash].js",
     path: path.resolve(__dirname, "dist"),
   },
+  devServer: {
+    static: {
+      publicPath: '/'
+    },
+    historyApiFallback: true
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html",
